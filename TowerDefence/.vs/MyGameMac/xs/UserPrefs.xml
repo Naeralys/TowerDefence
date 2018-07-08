@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{871B5A90-103A-46A5-BBB9-07C02B9851D1}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UI.cs">
+    <Files>
+      <File FileName="src/GameMain.cs" Line="18" Column="5" />
+      <File FileName="UI.cs" Line="26" Column="30" />
+      <File FileName="Button.cs" Line="72" Column="2" />
+      <File FileName="CollisionManager.cs" Line="31" Column="5" />
+      <File FileName="Game.cs" Line="33" Column="25" />
+      <File FileName="Currency.cs" Line="10" Column="5" />
+      <File FileName="Tower.cs" Line="53" Column="2" NotebookId="1" />
+      <File FileName="EventHandler.cs" Line="65" Column="31" NotebookId="1" />
+      <File FileName="GameObject.cs" Line="22" Column="71" NotebookId="1" />
+      <File FileName="Enemy.cs" Line="56" Column="25" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug-Mac" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyGameMac PreferredExecutionTarget="Test1" />
+  <MultiItemStartupConfigurations />
+</Properties>
