@@ -50,21 +50,27 @@ namespace MyGame
                             _towers.Add (tower);
                             _gameObjects.Add (tower);
                             _currency.Spend (btn.Cost);
-                        }
-					}
-				}
-				bool towerSelected = false;
-				foreach(Tower twr in _towers) {
-					if (twr.Selected) {
-						towerSelected = true;
-					}
-				}
-				if(towerSelected)
-				    _ui.TowerSelected = true;
-				else
-					_ui.TowerSelected = false;
-
+						} else if(btn.Id == 5 && _currency.Value >= btn.Cost) {
+							foreach (Tower twr in _towers) {
+                                if (twr.Selected) {
+									_currency.Spend (btn.Cost);                           
+									twr.Damage = twr.Damage * 2;
+                                }
+                            }
+						}
+					}  
+				}            
 			}
+			bool towerSelected = false;         
+            foreach (Tower twr in _towers) {
+                if (twr.Selected) {
+                    towerSelected = true;               
+                }
+            }
+            if (towerSelected)
+                _ui.TowerSelected = true;
+            else
+                _ui.TowerSelected = false;
 		}
     }
 }

@@ -31,12 +31,21 @@ namespace MyGame
 			case 4:
 				Cost = 10000;
 				break;
+			case 5:
+				Cost = 50;
+				break;
 			}
         }
         public override void Render()
 		{
-			SwinGame.FillRectangle (_color, PositionX, PositionY, Width, Height);
-			SwinGame.DrawText (Cost.ToString(), Color.Yellow, (PositionX + 15), (PositionY + 20));
+			if (Id == 5) {
+				SwinGame.FillRectangle (_color, PositionX, PositionY, Width, Height);
+				SwinGame.DrawText ("Upgrade: " + Cost.ToString (), Color.Yellow, (PositionX + 15), (PositionY + 20));
+			} else {
+
+				SwinGame.FillRectangle (_color, PositionX, PositionY, Width, Height);
+				SwinGame.DrawText (Cost.ToString (), Color.Yellow, (PositionX + 15), (PositionY + 20));
+			}
 		}
 		public override void Update ()
 		{

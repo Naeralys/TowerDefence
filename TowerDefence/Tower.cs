@@ -26,6 +26,8 @@ namespace MyGame
 		{
 			SwinGame.DrawRectangle (Color.Grey, (PositionX - 50), (PositionY - 50), (Width + 100), (Height + 100));
 			SwinGame.FillRectangle (_color, PositionX, PositionY, Width, Height);
+			if (Selected)
+				SwinGame.DrawText ("Damage: " + Damage, Color.Red, 700, 500);
 		}
 		public bool IsAt (Point2D pt)
         {
@@ -49,5 +51,9 @@ namespace MyGame
                 }
             }
         }
+        public void Upgrade()
+		{
+			Damage = Damage * 2;
+		}
     }
 }
